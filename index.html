@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums = [];
+        for (let i = 0; i<10; i++){
+            nums.push(Math.floor(Math.random()*201-100));
+        }
+        let evens = nums.filter(x => x%2 == 0);
+        let odds =  nums.filter(x => x%2 != 0);
+        let negatives = nums.filter(x => x<0);
+        let graterThanThreeArr = nums.filter(x => x>3);
+        console.log(`all numbers array: ${nums}`);
+        console.log(`evens numbers: ${evens}`);
+        console.log(`odds numbers: ${odds}`);
+        console.log(`negatives numbers: ${negatives}`);
+        console.log(`grater than three: ${graterThanThreeArr}`);
+    </script>
+</body>
+</html>
